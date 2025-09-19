@@ -1,0 +1,54 @@
+/* styles.css */
+
+/* Styling for the body */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Container padding */
+.container {
+    padding: 20px;
+}
+
+/* Staff card styling */
+.staff-card {
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.staff-card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card-text {
+    color: #777;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 767px) {
+    .staff-card {
+        margin-top: 10px;
+    }
+
+    .staff-card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+}

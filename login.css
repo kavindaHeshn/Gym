@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(18, 17, 17);
+    background-image: url('../images/blog-3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 100px; 
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: -1;
+}
+
+
+.login-container {
+    background: rgba(235, 209, 209, 0.8); 
+    padding: 100px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgb(93, 118, 54);
+    text-align: center;
+    backdrop-filter: blur(50px);
+    width: 950px; 
+}
+
+h2 {
+    color: #040101; 
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.error {
+    color: #f4f4f4;
+    background: #ffdddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 2px solid #fff; 
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+    color: #fff; 
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #ff7eb3;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff5277;
+}
+
+p {
+    color: #fff;
+    margin-top: 10px;
+}
+
+a {
+    color: #ffccff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

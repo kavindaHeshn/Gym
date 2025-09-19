@@ -1,0 +1,49 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: black;
+        }
+        
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .video-title {
+            font-family: 'Times New Roman', serif;
+            position: absolute;
+            color: white;
+            font-size: 200px;
+            font-weight: bold;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            transition: color 0.3s ease-in-out;
+            letter-spacing: 10px;
+        }
+        .video-title:hover {
+            color: red; 
+            cursor: pointer;
+        }
+        .video-title {
+            word-spacing: 20px;
+        }
+        
+        

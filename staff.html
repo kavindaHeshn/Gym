@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gym Staff | FitZone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: black;
+      color: white;
+      padding-top: 140px;
+    }
+
+    /* TOP BAR */
+    .top-bar {
+      background-color: #0a0a0a;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 30px;
+      font-size: 14px;
+      color: #888;
+      border-bottom: 1px solid #1a1a1a;
+    }
+
+    .top-bar .social-icons i {
+      margin-left: 15px;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .top-bar .social-icons i:hover {
+      color: #fac031;
+    }
+
+    /* MAIN NAVBAR */
+    .navbar-custom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+      background-color: #070707;
+      position: fixed;
+      top: 30px;
+      width: 100%;
+      z-index: 999;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: white;
+    }
+
+    .logo span {
+      color: #fac031;
+    }
+
+    .navbar-custom ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar-custom ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      position: relative;
+    }
+
+    .navbar-custom ul li.active a::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #8a63f7;
+    }
+
+    .whatsapp-btn {
+      background-color: #8a63f7;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #a288f0;
+    }
+
+    /* GYM STAFF SECTION */
+    h1 {
+      margin-bottom: 40px;
+      color: #fac031;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      background-color: #1c1c1c;
+      color: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: 320px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .card-img-top {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border: 4px solid #fac031;
+      margin-bottom: 20px;
+    }
+
+    .card-title {
+      color: #fac031;
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .card-text {
+      margin-bottom: 10px;
+    }
+
+    .card ul {
+      list-style: none;
+      padding-left: 0;
+      text-align: left;
+      margin-top: 10px;
+    }
+
+    .card ul li::before {
+      content: "✔ ";
+      color: #fac031;
+    }
+
+    @media (max-width: 768px) {
+      .navbar-custom {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+      }
+
+      .navbar-custom ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .whatsapp-btn {
+        margin-top: 10px;
+      }
+
+      .row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div>Limited Slots Only</div>
+  <div class="social-icons">
+    <i class="fab fa-google"></i>
+    <i class="fab fa-youtube"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-whatsapp"></i>
+    <i class="fab fa-tiktok"></i>
+  </div>
+</div>
+
+<!-- Main Navigation -->
+<nav class="navbar-custom">
+  <div class="logo">FitZone Fitness Center <span>⚡</span></div>
+  <ul>
+    <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
+    <li class="nav-item"><a class="nav-link" href="staff.html">Gym Staff</a></li>
+    <li class="nav-item"><a class="nav-link" href="coach.php">Coach Service</a></li>
+    <li class="nav-item"><a class="nav-link" href="location.php">Contact</a></li>
+    <li class="nav-item"><a class="nav-link" href="feedback.php">Customer Feedback</a></li>
+  </ul>
+  <a href="../frontend/login.php" class="login.php">Login</a>
+</nav>
+
+<!-- PAGE CONTENT -->
+<div class="container">
+  <h1>Meet Our Gym Staff</h1>
+  <div class="row">
+
+    <!-- Trainer Card -->
+    <div class="card">
+      <img src="../images/962.jpg" class="card-img-top" alt="Trainer">
+      <h3 class="card-title">Tharaka Thilakasiri</h3>
+      <p class="card-text">Personal Trainer | Body Engineer SL</p>
+      <ul>
+        <li>Personal Training</li>
+        <li>Strength Training</li>
+        <li>Weight Loss</li>
+        <li>Cardio Exercises</li>
+      </ul>
+      <p>📞 0711 735 288</p>
+    </div>
+
+        <!-- Trainer Card -->
+        <div class="card">
+            <img src="../images/57b.jpg" class="card-img-top" alt="Trainer">
+            <h3 class="card-title">Sajith Kumara</h3>
+            <p class="card-text">Senior Fitness Coach | FitZone</p>
+            <ul>
+              <li>Functional Training</li>
+              <li>HIIT Workouts</li>
+              <li>Posture Correction</li>
+              <li>Mobility Coaching</li>
+            </ul>
+            <p>📞 0772 456 321</p>
+          </div>
+      
+          <!-- Trainer Card -->
+          <div class="card">
+            <img src="../images/fc08.jpg" class="card-img-top" alt="Trainer">
+            <h3 class="card-title">Nadeesha Fernando</h3>
+            <p class="card-text">Zumba & Aerobics Instructor</p>
+            <ul>
+              <li>Zumba Classes</li>
+              <li>Dance Fitness</li>
+              <li>Aerobics for Seniors</li>
+              <li>Flexibility Training</li>
+            </ul>
+            <p>📧 nadeesha.f@fitzone.lk</p>
+          </div>
+      
+          <!-- Trainer Card -->
+          <div class="card">
+            <img src="../images/1f9.jpg" class="card-img-top" alt="Trainer">
+            <h3 class="card-title">Roshan Silva</h3>
+            <p class="card-text">Strength & Conditioning Coach</p>
+            <ul>
+              <li>Powerlifting</li>
+              <li>Strength Programming</li>
+              <li>Injury Prevention</li>
+              <li>Endurance Training</li>
+            </ul>
+            <p>📞 0766 789 654</p>
+          </div>
+      
+
+    <!-- Nutritionist Card -->
+    <div class="card">
+      <img src="../images/s-l1200.png" class="card-img-top" alt="Nutritionist">
+      <h3 class="card-title">Jane Perera</h3>
+      <p class="card-text">Certified Nutritionist</p>
+      <ul>
+        <li>Custom Meal Planning</li>
+        <li>Diet for Weight Loss</li>
+        <li>Muscle Gain Nutrition</li>
+        <li>Supplement Guidance</li>
+      </ul>
+      <p>📧 jane.nutrition@fitzone.lk</p>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
